@@ -1,5 +1,3 @@
-import re
-
 email = input('Enter Your Email: ')
 space = False
 uppercase = False
@@ -7,7 +5,7 @@ other_case = False
 
 
 if len(email) >= 6:
-    if email[0].isalpha():
+    if email[0].isalpha():    
         if '@' in email and email.count('@') == 1:
             if (email[-4] == '.') ^ (email[-3] == '.'):
                 for character in email:
@@ -31,7 +29,6 @@ if len(email) >= 6:
                     print('Invalid Email!!.3')
                 else:
                     print("It's a Valid Email.")
-
     else:
         print('Invalid Email!!!.2')
 else:
